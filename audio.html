@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <audio id="audio" controls muted autoplay>
+        <source src="./sounds/sugar.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        window.onload = function () {
+            var context = new AudioContext();
+        }
+        console.log("1")
+        new Audio("./sounds/sugar.mp3").play();
+        setTimeout(function play() {
+            var audio = document.getElementById("audio");
+            console.log(audio)
+            audio.play();
+        }, 5000)
+
+
+    </script>
+</body>
+
+</html>
